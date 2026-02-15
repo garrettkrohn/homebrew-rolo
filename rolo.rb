@@ -5,21 +5,21 @@
 class Rolo < Formula
   desc "Rolo - Roll your own logic"
   homepage "https://github.com/garrettkrohn/rolo"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.4/rolo_Darwin_x86_64.tar.gz"
-      sha256 "b0c3e0a213155b3b160286cb799b56949a21a4a22d8bfcb775eb34b97e6fdf95"
+      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.5/rolo_Darwin_x86_64.tar.gz"
+      sha256 "48114af8a2dee5d726619f57bd69339f9b94524b381a60b910fb13256609433f"
 
       def install
         bin.install "rolo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.4/rolo_Darwin_arm64.tar.gz"
-      sha256 "de2f5dedd23dcad68b0c9f2bdbacb62ce1dc8e6653b5e953fc488ca31e222517"
+      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.5/rolo_Darwin_arm64.tar.gz"
+      sha256 "512e5abd2cba6e939d217b514e1eb109035bd740295c6f1bc08102c589ceba3d"
 
       def install
         bin.install "rolo"
@@ -29,15 +29,15 @@ class Rolo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.4/rolo_Linux_x86_64.tar.gz"
-      sha256 "0f8609362a2d6667636068ca0c210f3a5f48a66d351a93cf290418b80c4118d5"
+      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.5/rolo_Linux_x86_64.tar.gz"
+      sha256 "dcc19b7181af315b535bbad380792c6d9d974a9475a79b612d2d6db1f5299b60"
       def install
         bin.install "rolo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.4/rolo_Linux_arm64.tar.gz"
-      sha256 "f104bcd197180277182aa8f3c86eb51a73d65e00d839a08ed3e12f6ee0cbdda4"
+      url "https://github.com/garrettkrohn/rolo/releases/download/v1.0.5/rolo_Linux_arm64.tar.gz"
+      sha256 "113042731beabe20dafcb869b578a870090448b05468e723d6d8a62480dfbfb1"
       def install
         bin.install "rolo"
       end
